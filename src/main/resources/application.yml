@@ -1,0 +1,25 @@
+server:
+  context-path: /yaoxintong-admin
+  port: 9292
+  tomcat:
+    uri-encoding: UTF-8  
+  
+spring:
+  datasource:
+#    url: jdbc:mysql://localhost:3306/yaoxintong_r?characterEncoding=utf8
+#    username: root
+#    password: "0000"
+    url: jdbc:mysql://123.56.87.74:3307/yaoxintong_r?characterEncoding=utf8
+    username: root
+    password: "vnique"
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+      naming:
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect  
